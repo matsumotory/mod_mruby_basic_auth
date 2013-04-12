@@ -33,27 +33,27 @@ Basic Auth Moudle using mod_mruby.
 
     - Change /path/to/mruby_basic_auth.rb for you
 
-```ruby
-user_list = {
-  "bilbo" => "foo",
-  "frodo" => "bar",
-  "samwise" => "baz",
-  "aragorn" => "qux",
-  "legolas" => "quux",
-  "gimli" => "corge",
-}
-
-anp = Apache::AuthnProvider.new
-
-if user_list[anp.user] == anp.password
-  Apache.return(Apache::AuthnProvider::AUTH_GRANTED)
-else
-  Apache.return(Apache::AuthnProvider::AUTH_DENIED)
-end
-```
+    ```ruby
+    user_list = {
+      "bilbo" => "foo",
+      "frodo" => "bar",
+      "samwise" => "baz",
+      "aragorn" => "qux",
+      "legolas" => "quux",
+      "gimli" => "corge",
+    }
+    
+    anp = Apache::AuthnProvider.new
+    
+    if user_list[anp.user] == anp.password
+      Apache.return(Apache::AuthnProvider::AUTH_GRANTED)
+    else
+      Apache.return(Apache::AuthnProvider::AUTH_DENIED)
+    end
+    ```
 
 - httpd restart
 
-```bash
-service httpd restart
-```
+    ```bash
+    service httpd restart
+    ```
