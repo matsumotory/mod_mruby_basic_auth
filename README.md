@@ -7,6 +7,7 @@ Basic Auth Moudle using mod_mruby.
     `Nothing`
 
 ## How to Use
+
 - Intall mod_mruby previously
 
     See https://github.com/matsumoto-r/mod_mruby
@@ -31,7 +32,7 @@ Basic Auth Moudle using mod_mruby.
     </IfModule>
     ```
 
-    - Change /path/to/mruby_basic_auth.rb for you
+- Change /path/to/mruby_basic_auth.rb for you
 
     ```ruby
     user_list = {
