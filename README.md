@@ -10,7 +10,21 @@ Basic Auth Moudle using mod_mruby
 cp mod_mruby_basic_auth.conf ${HTTPD_ROOT}/conf.d/.
 ```
 
-- Change scripts for you
+- Change mod_mruby_basic_auth.conf for you
+
+```
+<IfModule mruby_module>
+#  <Location /basic/>
+#    AuthType basic
+#    AuthName "Message for clients"
+#    AuthBasicProvider mruby
+#    mrubyAuthnCheckPassword /path/to/mruby_basic_auth.rb
+#    require valid-user
+#  </Location>
+</IfModule>
+```
+
+- Change /path/to/mruby_basic_auth.rb for you
 
 ```
 user_list = {
