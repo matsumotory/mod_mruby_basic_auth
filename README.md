@@ -22,13 +22,13 @@ Basic Auth Module using mod_mruby.
 
     ```apache
     <IfModule mruby_module>
-    #  <Location /basic/>
-    #    AuthType basic
-    #    AuthName "Message for clients"
-    #    AuthBasicProvider mruby
-    #    mrubyAuthnCheckPassword /path/to/mruby_basic_auth.rb
-    #    require valid-user
-    #  </Location>
+      <Location /secret/>
+        AuthType basic
+        AuthName "Message for clients"
+        AuthBasicProvider mruby
+        mrubyAuthnCheckPassword /path/to/mruby_basic_auth.rb
+        require valid-user
+      </Location>
     </IfModule>
     ```
 
