@@ -5,11 +5,13 @@ Basic Auth Moudle using mod_mruby
 ## How to Use
 
 - Copy conf
+
 ```
 cp mod_mruby_basic_auth.conf ${HTTPD_ROOT}/conf.d/.
 ```
 
 - Change scripts for you
+
 ```
 user_list = {
   "bilbo" => "foo",
@@ -30,6 +32,7 @@ end
 ```
 
 - httpd restart
+
 ```
 service httpd restart
 ```
