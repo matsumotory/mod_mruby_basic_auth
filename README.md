@@ -9,29 +9,29 @@ Basic Auth Moudle using mod_mruby.
 ## How to Use
 - Intall mod_mruby previously
 
-See https://github.com/matsumoto-r/mod_mruby
+    See https://github.com/matsumoto-r/mod_mruby
 
 - Copy conf
 
-```bash
-cp mod_mruby_basic_auth.conf ${HTTPD_ROOT}/conf.d/.
-```
+    ```bash
+    cp mod_mruby_basic_auth.conf ${HTTPD_ROOT}/conf.d/.
+    ```
 
 - Change mod_mruby_basic_auth.conf for you
 
-```apache
-<IfModule mruby_module>
-#  <Location /basic/>
-#    AuthType basic
-#    AuthName "Message for clients"
-#    AuthBasicProvider mruby
-#    mrubyAuthnCheckPassword /path/to/mruby_basic_auth.rb
-#    require valid-user
-#  </Location>
-</IfModule>
-```
+    ```apache
+    <IfModule mruby_module>
+    #  <Location /basic/>
+    #    AuthType basic
+    #    AuthName "Message for clients"
+    #    AuthBasicProvider mruby
+    #    mrubyAuthnCheckPassword /path/to/mruby_basic_auth.rb
+    #    require valid-user
+    #  </Location>
+    </IfModule>
+    ```
 
-- Change /path/to/mruby_basic_auth.rb for you
+    - Change /path/to/mruby_basic_auth.rb for you
 
 ```ruby
 user_list = {
