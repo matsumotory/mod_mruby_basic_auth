@@ -6,13 +6,13 @@ Basic Auth Moudle using mod_mruby
 
 - Copy conf
 
-```
+```bash
 cp mod_mruby_basic_auth.conf ${HTTPD_ROOT}/conf.d/.
 ```
 
 - Change mod_mruby_basic_auth.conf for you
 
-```
+```apache
 <IfModule mruby_module>
 #  <Location /basic/>
 #    AuthType basic
@@ -26,7 +26,7 @@ cp mod_mruby_basic_auth.conf ${HTTPD_ROOT}/conf.d/.
 
 - Change /path/to/mruby_basic_auth.rb for you
 
-```
+```ruby
 user_list = {
   "bilbo" => "foo",
   "frodo" => "bar",
@@ -47,6 +47,6 @@ end
 
 - httpd restart
 
-```
+```bash
 service httpd restart
 ```
