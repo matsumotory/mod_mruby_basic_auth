@@ -1,6 +1,6 @@
 # Basic Auth Module by mod_mruby
 
-Basic Auth Moudle using mod_mruby.
+Basic Auth Module using mod_mruby.
 
 - mrbgem dependency for mod_mruby
 
