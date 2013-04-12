@@ -12,13 +12,13 @@ Basic Auth Moudle using mod_mruby.
 
     See https://github.com/matsumoto-r/mod_mruby
 
-- Copy conf
+- Copy .conf
 
     ```bash
     cp mod_mruby_basic_auth.conf ${HTTPD_ROOT}/conf.d/.
     ```
 
-- Change mod_mruby_basic_auth.conf for you
+- Change .conf for you
 
     ```apache
     <IfModule mruby_module>
@@ -32,7 +32,7 @@ Basic Auth Moudle using mod_mruby.
     </IfModule>
     ```
 
-- Change /path/to/mruby_basic_auth.rb for you
+- Change /path/to/.rb for you
 
     ```ruby
     user_list = {
